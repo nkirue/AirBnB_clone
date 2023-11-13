@@ -95,7 +95,9 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_show(self, arg):
-        """This displays the string representation of a class instance of a given id."""
+        """This displays the string representation
+        of a class instance of a given id.
+        """
         arl = parse_arg(arg)
         obdict = storage.all()
         if len(arl) == 0:
@@ -126,12 +128,14 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_all(self, arg):
-        """This displays string representations of all instances of a given class."""
+        """This displays string representations
+        of all instances of a given class.
+        """
         arg = parse_arg(arg)
         if len(arl) > 0 and arl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
-            ob= []
+            ob = []
             for oj in storage.all().values():
                 if len(arl) > 0 and arl[0] == obj.__class__.__name__:
                     ob.append(oj.__str__())
@@ -196,4 +200,3 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
-
