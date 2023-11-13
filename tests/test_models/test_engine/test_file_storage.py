@@ -79,7 +79,7 @@ class TestFileStorage(unittest.TestCase):
 
     def test_reload_method_file_not_found(self):
         """ Test reload method when file not found """
-        self.file_storage.reload()  
+        self.file_storage.reload()
 
     def test_reload_method_empty_file(self):
         """ Test reload method with an empty file """
