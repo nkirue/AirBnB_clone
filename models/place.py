@@ -3,8 +3,10 @@
 from models.base_model import BaseModel
 
 """ Place class, inheriting from BaseModel """
+
+
 class Place(BaseModel):
-    """ Attributes for the Place class 
+    """ Attributes for the Place class
 
         city_id (str): The City id.
         user_id (str): The User id.
