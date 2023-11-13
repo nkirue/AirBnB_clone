@@ -20,7 +20,10 @@ class TestPlace(unittest.TestCase):
         self.assertIsInstance(self.place, Place)
 
     def test_attributes_initializatn(self):
-        """ This test if the attributes of the place are initialized correctly """
+        """ This test if the attributes of the
+        place are initialized correctly
+        """
+
         self.assertEqual(self.place.city_id, "")
         self.assertEqual(self.place.user_id, "")
         self.assertEqual(self.place.name, "")

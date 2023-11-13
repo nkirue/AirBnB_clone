@@ -45,5 +45,6 @@ class TestReview(unittest.TestCase):
         self.assertTrue("created_at" in str_representation)
         self.assertTrue("updated_at" in str_representation)
 
+
 if __name__ == '__main__':
     unittest.main()

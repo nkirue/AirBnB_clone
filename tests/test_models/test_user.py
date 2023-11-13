@@ -3,6 +3,7 @@
 import unittest
 from models.user import User
 
+
 class TestUser(unittest.TestCase):
 
     def test_user_attributes(self):
@@ -16,6 +17,7 @@ class TestUser(unittest.TestCase):
         user = User()
         self.assertIsInstance(user, User)
         self.assertIsInstance(user, BaseModel)
+
 
 if __name__ == '__main__':
     unittest.main()

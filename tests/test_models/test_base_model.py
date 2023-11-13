@@ -10,7 +10,6 @@ from datetime import datetime
 import models
 
 
-
 class TestBaseModel(unittest.TestCase):
     def setUp(self):
         """ This backups the original file path and objects """
@@ -56,7 +55,8 @@ class TestBaseModel(unittest.TestCase):
 
     def test_str(self):
         """ This tests the __str__ method """
-        expted_str = "[BaseModel] ({}) {}".format(self.base_model.id, self.base_model.__dict__)
+        expted_str = "[BaseModel] ({}) {}".format(self.base_model.id,
+                                                  self.base_model.__dict__)
         self.assertEqual(str(self.base_model), expted_str)
 
     def test_save_reload(self):
