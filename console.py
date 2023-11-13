@@ -65,7 +65,7 @@ class HBNBCommand(cmd.Cmd):
         mat = re.search(r"\.", arg)
         if mat is not None:
             arl = [arg[:mat.span()[0]], arg[mat.span()[1]:]]
-            mat = re.search(r"\((.*?)\)", argl[1])
+            mat = re.search(r"\((.*?)\)", arl[1])
             if mat is not None:
                 comd = [arl[1][:mat.span()[0]], mat.group()[1:-1]]
                 if comd[0] in ardict.keys():
@@ -124,20 +124,20 @@ class HBNBCommand(cmd.Cmd):
         elif "{}.{}".format(arl[0], arl[1]) not in obdict.keys():
             print("** no instance found **")
         else:
-            del ojdict["{}.{}".format(arl[0], arl[1])]
+            del obdict["{}.{}".format(arl[0], arl[1])]
             storage.save()
 
     def do_all(self, arg):
         """This displays string representations
         of all instances of a given class.
         """
-        arg = parse_arg(arg)
+        arl = parse_arg(arg)
         if len(arl) > 0 and arl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
             ob = []
             for oj in storage.all().values():
-                if len(arl) > 0 and arl[0] == obj.__class__.__name__:
+                if len(arl) > 0 and arl[0] == oj.__class__.__name__:
                     ob.append(oj.__str__())
                 elif len(arl) == 0:
                     ob.append(oj.__str__())
