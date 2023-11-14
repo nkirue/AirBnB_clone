@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""FileStorage that serializes instances to a JSON file
+"""The FileStorage that serializes instances to a JSON file
      and deserializes JSON file to instances:.
 
 """
@@ -14,7 +14,7 @@ from models.place import Place
 
 
 class FileStorage:
-    """This represents storage engine.
+    """This represents the storage engine.
 
     Classattributes:
         __file_path (string): string - path to the JSON file.
