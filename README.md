@@ -1,11 +1,11 @@
-0x00. AirBnB clone - The console
+0x00. AirBnB clone - The console project
 
 Description:
 The console serves as the initial component in the development of the AirBnB project, aiming to deploy a simplified version of the AirBnB website (HBnB). In this phase, a command interpreter has been designed to handle object management for the AirBnB website. This is the first step towards building our first full-fledged web application, the AirBnB clone.
 
 Key functionalities of the command interpreter for managing AirBnB clone objects include:
 
-Creating a new object.
+To create a new object.
 Retrieving an object from either a file or a database.
 Performing operations on objects.
 Updating attributes of an object.
