@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""City class."""
+"""the City class."""
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """Class city.
+    """the Class city.
 
     Attributes:
         state_id (string): The state id.
