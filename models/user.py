@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""User class."""
+"""The User class."""
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """ User Class.
+    """the User Class.
 
     Classattributes:
         email (string): The email of the user.
